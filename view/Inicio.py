@@ -139,6 +139,20 @@ def windowInicio():
         command=goRegister
     ).place(relx = 0.25, rely = 0.7 , anchor = CENTER)
 
+    CTkButton(
+        myFrame,
+        text="SALIR", 
+        width=100, 
+        height= 40,
+        font=("Arial", 16), 
+        corner_radius=3, 
+        text_color="white", 
+        fg_color="red",
+        hover_color="black",
+        command=salir
+    ).place(relx = 0.15, rely = 0.96 , anchor = CENTER)
+
+
 
     #Boton de Ver Registro
 
@@ -232,6 +246,11 @@ def windowInicio():
 
 
     Myinicio.mainloop()
+
+
+def salir():
+    global Myinicio
+    Myinicio.destroy()
 
 
 def gostate():

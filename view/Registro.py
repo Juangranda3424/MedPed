@@ -170,7 +170,6 @@ def Registro():
         font=("Arial", 20), 
         width=300, 
         height=40, 
-        show="*",
         border_color="black"
     ).place(relx=0.5, rely=0.60, anchor=CENTER)
 
